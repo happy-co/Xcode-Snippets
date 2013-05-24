@@ -1,24 +1,18 @@
 // UITableViewDataSource
 // Placeholders for the core table view data source methods
 // 
-// Platform: All
-// Language: iOS
+// Platform: iOS
+// Language: Objective-C
 // Completion Scope: Class Implementation
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return <# number #>;
+    return <#number#>;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    switch (section) {
-        case <#constant#>:
-            <#statements#>
-            break;
-        default:
-            return 0;
-    }
+    return <#number#>
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -30,4 +24,8 @@
     }
         
     return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    <#statements#>
 }
